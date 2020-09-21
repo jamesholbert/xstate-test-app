@@ -147,7 +147,6 @@ const machineModel = Machine({
         experience: {
           meta: {
             test: async page => {
-              console.log('state machine, experience')
               await page.waitForSelector('[data-testid="exp-container"]');
             }
           },
@@ -157,7 +156,6 @@ const machineModel = Machine({
             idle: {
               meta: {
                 test: async page => {
-                  console.log('state machine, idle')
                   await page.waitForSelector('[data-testid="add-draft-button"]');
                 }
               },
@@ -174,7 +172,6 @@ const machineModel = Machine({
             create: {
               meta: {
                 test: async page => {
-                  console.log('state machine, idle')
                   await page.waitForSelector('[data-testid="save-draft-button"]');
                 }
               },
