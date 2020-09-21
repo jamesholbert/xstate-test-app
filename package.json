@@ -3,15 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "all": "concurrently \"npm run dev\" \"npm run start:tester\"",
-    "dev": "NODE_OPTIONS='--inspect' next dev",
-    "e2e-res": "BYPASS_IFRAME=/resume_builder?clientId=C12345 yarn next",
     "e2e": "jest -c jest.config.js",
     "build": "next build",
-    "start": "react-scripts start",
-    "start:tester": "cd iframe-testing-app;PORT=3001 npm start",
-    "create": "./create-embed.sh",
-    "e2e": "jest -c jest.config.js"
+    "start": "react-scripts start"
   },
   "dependencies": {
     "@xstate/react": "^0.8.1",
